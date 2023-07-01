@@ -16,6 +16,7 @@ public class time {
         LocalTime time = LocalTime.now();
         System.out.println("РљР°Рє РІР°СЃ Р·РѕРІСѓС‚?");
         String name = scanner.nextLine();
+        scanner.close();
 
 //        if (time.isAfter(LocalTime.of(11, 55))){
 //            System.out.println("РћРїРµСЂР°С‚РѕСЂ РІРµСЂРЅСѓР» true");
