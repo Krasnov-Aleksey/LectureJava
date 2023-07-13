@@ -1,11 +1,11 @@
-public class Cat {
+public class ClasCat {
     int numPassport;
     String owner;
     String name;
     int age;
     String color;
 
-    public Cat(int numPassport, String name, String owner, int age, String color) {
+    public ClasCat(int numPassport, String name, String owner, int age, String color) {
         this.numPassport = numPassport;
         this.owner = owner;
         this.name = name;
@@ -32,10 +32,10 @@ public class Cat {
         if (this == obj){
             return true;
         }
-        if (!(obj instanceof Cat)){
+        if (!(obj instanceof ClasCat)){
             return false;
         }
-        Cat cat = (Cat) obj;
+        ClasCat cat = (ClasCat) obj;
         return numPassport == cat.numPassport && name.equalsIgnoreCase(cat.name) && owner.equalsIgnoreCase(cat.owner);
     }
 }
